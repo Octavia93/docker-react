@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t Octavia93/docker-react -f Dockerfile.dev .
+  - docker build -t octavia93/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true Octavia93/docker-react npm run test -- --watchAll=false
+  - docker run -e CI=true octavia93/docker-react npm run test -- --watchAll=false
